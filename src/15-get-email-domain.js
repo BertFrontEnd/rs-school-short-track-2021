@@ -9,7 +9,8 @@
  *
  */
 function getEmailDomain(/* email */) {
-  throw new Error('Not implemented');
+  let forDomain = email.indexOf('@');
+  return email.slice(forDomain);
 }
 
 module.exports = getEmailDomain;
